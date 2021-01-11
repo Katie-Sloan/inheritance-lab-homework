@@ -23,4 +23,9 @@ public class ManagerTest {
         assertEquals("JL202101A", manager.getNiNumber());
     }
 
+    @Test
+    public void canGetSalary(){
+        assertEquals(50000.00, manager.getSalary(), 0.01);
+    }
+
 }
