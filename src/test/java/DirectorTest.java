@@ -29,6 +29,12 @@ public class DirectorTest {
     }
 
     @Test
+    public void canGetDeptName() {
+        assertEquals("Company Directors", director.getDeptName());
+    }
+
+
+    @Test
     public void canRaiseSalary() {
         director.raiseSalary(2000.00);
         assertEquals(102000.00, director.getSalary(), 0.01);

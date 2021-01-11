@@ -29,7 +29,7 @@ public class ManagerTest {
     }
 
     @Test
-    public void canDeptName(){
+    public void canGetDeptName(){
         assertEquals("Slough Office", manager.getDeptName());
     }
 
