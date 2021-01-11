@@ -3,11 +3,11 @@ package staff;
 public abstract class Employee {
 
     private String name;
-    private int niNumber;
+    private String niNumber;
     private double salary;
 
 
-    public Employee(String name, int niNumber, double salary) {
+    public Employee(String name, String niNumber, double salary) {
         this.name = name;
         this.niNumber = niNumber;
         this.salary = salary;
@@ -17,11 +17,11 @@ public abstract class Employee {
         return this.name;
     }
 
-    public int getNiNumber() {
+    public String getNiNumber() {
         return this.niNumber;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return this.salary;
     }
 
