@@ -18,5 +18,10 @@ public class DirectorTest {
         assertEquals("Neil Godwin", director.getName());
     }
 
+    @Test
+    public void canGetNiNumber() {
+        assertEquals("CD123401B", director.getNiNumber());
+    }
+
 
 }
