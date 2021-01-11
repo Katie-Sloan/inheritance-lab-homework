@@ -23,5 +23,9 @@ public class DirectorTest {
         assertEquals("CD123401B", director.getNiNumber());
     }
 
+    @Test
+    public void canGetSalary() {
+        assertEquals(100000.00, director.getSalary(), 0.01);
+    }
 
 }
