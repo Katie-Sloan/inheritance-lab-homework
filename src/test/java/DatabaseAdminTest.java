@@ -40,6 +40,4 @@ public class DatabaseAdminTest {
         assertEquals(250, databaseAdmin.payBonus(), 0.01);
     }
 
-
-
 }
