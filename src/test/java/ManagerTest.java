@@ -40,6 +40,12 @@ public class ManagerTest {
     }
 
     @Test
+    public void cannotRaiseSalaryWhereNegativeNumber(){
+        manager.raiseSalary(-1.00);
+        assertEquals(50000.00, manager.getSalary(), 0.01);
+    }
+
+    @Test
     public void canPayBonus(){
         manager.payBonus();
         assertEquals(500, manager.payBonus(), 0.01);
