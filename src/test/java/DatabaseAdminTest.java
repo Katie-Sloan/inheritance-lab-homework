@@ -23,5 +23,10 @@ public class DatabaseAdminTest {
         assertEquals("ZQ432101A", databaseAdmin.getNiNumber());
     }
 
+    @Test
+    public void canGetSalary() {
+        assertEquals(25000.00, databaseAdmin.getSalary(), 0.01);
+    }
+
 
 }
