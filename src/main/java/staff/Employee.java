@@ -25,6 +25,12 @@ public abstract class Employee {
         return this.salary;
     }
 
+    public void setName(String name) {
+        if (name != null) {
+            this.name = name;
+        }
+    }
+
     public void raiseSalary(Double raise) {
         if (raise >= 0.00) {
             this.salary += raise;

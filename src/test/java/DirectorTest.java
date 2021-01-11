@@ -39,6 +39,18 @@ public class DirectorTest {
     }
 
     @Test
+    public void canSetName() {
+        director.setName("Katie Sloan");
+        assertEquals("Katie Sloan", director.getName());
+    }
+
+    @Test
+    public void cannotSetNameToNull() {
+        director.setName(null);
+        assertEquals("Neil Godwin", director.getName());
+    }
+
+    @Test
     public void canRaiseSalary() {
         director.raiseSalary(2000.00);
         assertEquals(102000.00, director.getSalary(), 0.01);

@@ -29,6 +29,17 @@ public class DatabaseAdminTest {
     }
 
     @Test
+    public void canSetName() {
+        databaseAdmin.setName("Katie Sloan");
+        assertEquals("Katie Sloan", databaseAdmin.getName());
+    }
+
+    @Test
+    public void cannotSetNameToNull() {
+        assertEquals("Tim Canterbury", databaseAdmin.getName());
+    }
+
+    @Test
     public void canRaiseSalary() {
         databaseAdmin.raiseSalary(100.00);
         assertEquals(25100.00, databaseAdmin.getSalary(), 0.01);
