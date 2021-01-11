@@ -29,6 +29,11 @@ public class ManagerTest {
     }
 
     @Test
+    public void canDeptName(){
+        assertEquals("Slough Office", manager.getDeptName());
+    }
+
+    @Test
     public void canRaiseSalary(){
         manager.raiseSalary(500.00);
         assertEquals(50500.00, manager.getSalary(), 0.01);
